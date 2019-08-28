@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.required {
+  border: 1px solid red !important;
+}
+
+.selectedField {
+  background-color: rgb(200, 193, 193);
+}
+
+.selectedField .edit-buttonEdit{
+  background-color: rgb(200, 193, 193);
+}
+
+.field,
+.emptyField {
+  position: relative;
+  cursor: pointer;
+  height: 70px;
+}
+
+.field td,
+.emptyField td {
+  width: 50%;
+  padding-left: 10px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.emptyField td {
+  text-align: center;
+}
+
+#textarea-json {
+  border: 1px solid black;
+  outline: none;
+  width: 300px;
+  height: 300px;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0;
+}
+
+table th {
+  width: 50%;
+}
+
+
+table tr {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.edit-input {
+  width: 50%;
+  height: 60px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.edit-buttonEdit {
+  background-image: url(../images/icons8-edit-64.png);
+  background-size: cover;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.edit-buttonEdit:hover {
+  background-image: url(../images/icons8-edit-64\ green.png);
+}
+
+.edit-buttonOk,
+.edit-buttonCancel,
+.add-button,
+.add-buttonCancel {
+  width: 80px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.edit-buttonOk,
+.add-button {
+  background-color: rgb(13, 190, 13);
+  margin: 0 20px;
+}
+
+.edit-buttonOk:hover,
+.add-button:hover {
+  background-color: rgb(7, 109, 7);
+}
+
+.edit-buttonCancel,
+.add-buttonCancel {
+  background-color: rgb(238, 50, 50);
+}
+
+.edit-buttonCancel:hover,
+.add-buttonCancel:hover {
+  background-color: rgb(236, 9, 9);
+}
+
+.add-container {
+  position: fixed;
+  left: calc(50% - 150px);
+  top: calc(50% - 150px);
+  z-index: 999;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.add-containerName input,
+.add-containerValue input {
+  width: 100%;
+  height: 60px;
+  border: 1px solid grey;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.add-containerValue input {
+  margin: 10px 0;
+}
+
+.add-controll {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+ul li {
+  list-style-type: none;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+ul .add:hover {
+  color: green;
+  font-size: 25px;
+}
+
+.deleteBtn {
+  position: absolute;
+}
+
+span[data-sort] {
+  cursor: pointer;
+}
+
+span[data-sort]:hover {
+  color: green;
+}
+
+
+.textarea-container {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textarea-controller {
+  display: flex;
+  justify-content: center;
+}
+
+
+.textarea-download,
+.textarea-unload {
+  border: none;
+  outline: none;
+  height: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+}
+
+.textarea-download {
+  margin-right: 10px;
+}
+
+.textarea-download:hover,
+.textarea-unload:hover {
+  background-color: rgb(152, 46, 250);
+}
+
+.deleteBtn span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.deleteBtn span:hover {
+  color: red;
+}

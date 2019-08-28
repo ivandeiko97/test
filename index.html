@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div>
+    <ul>
+      <li class="add">Add</li>
+    </ul>
+  </div>
+  <div class="add-container" style="display: none;">
+    <div class="add-containerName">
+      <input type="text" placeholder="Name" class="add-name" data-name>
+    </div>
+    <div class="add-containerValue">
+      <input type="text" class="add-value" placeholder="Value" data-value>
+    </div>
+    <div class="add-controll">
+      <button class="add-button">Add</button>
+      <button class="add-buttonCancel">Cancel</button>
+    </div>
+  </div>
+  <div id="container">
+      <table id="table">
+          <thead>
+            <th><span data-sort="name">Name(sort)</span></th>
+            <th><span data-sort="value">Value(sort)</span></th>
+            <th class="deleteTH"></th>
+          </thead>
+          <tbody>
+          </tbody>
+      </table>
+      <div class="textarea-container">
+        <label for="textarea-json">You can write here text in JSON format</label> <br>
+        <textarea id="textarea-json">
+
+        </textarea> <br>
+        <div class="textarea-controller">
+          <button class="textarea-download">Download Data</button>
+          <button class="textarea-unload">Unload Data</button>
+        </div>
+      </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
