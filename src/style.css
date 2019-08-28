@@ -73,7 +73,7 @@ table tr {
 }
 
 .edit-buttonEdit {
-  background-image: url(../images/icons8-edit-64.png);
+  background-image: url(./images/icons8-edit-64.png);
   background-size: cover;
   background-color: #fff;
   border: none;
@@ -87,7 +87,7 @@ table tr {
 }
 
 .edit-buttonEdit:hover {
-  background-image: url(../images/icons8-edit-64\ green.png);
+  background-image: url(./images/icons8-edit-64\ green.png);
 }
 
 .edit-buttonOk,
