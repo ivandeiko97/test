@@ -243,3 +243,8 @@ span[data-sort]:hover {
 .deleteBtn span:hover {
   color: red;
 }
+
+.textarea-p {
+  width: 300px;
+  text-align: center;
+}
